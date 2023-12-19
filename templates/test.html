@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+   <HEAD>
+       {% load static %}
+       <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+       <TITLE>Кулинарные рецепты</TITLE>
+       <meta name="description" content="Рецепты">
+       <meta name="keywords" content="Кулинария Рецепты Вкусная еда Кухня">
+   </HEAD>
+
+   <BODY onmousedown="return false" onselectstart="return false">
+
+       <center>
+           <img src="{% static 'images/eda.jpg' %}" width="700" height="412">
+       </center>
+       <CENTER>
+           <H1> Самые вкусные кулинарные рецепты </H1>
+       </CENTER>
+       <p align ="center" >На нашем сайте вы сможете найти рецепт на свой вкус. Мы собрали простые домашние рецепты блюд на каждый день с фотографиями и пошаговым приготовлением. </p>
+       <div class="form1">
+           <div class="form2">
+               <UL>
+                  <li><a href="{% url 'soups' %}">Супы</a></li>
+                  <li><a href="{% url 'hots' %}">Горячее</a></li>
+                  <li><a href="{% url 'salati' %}">Салаты</a></li>
+                  <li><a href="{% url 'zakuski' %}">Закуски</a></li>
+               </UL>
+           </div>
+       </div>
+       <p align ="center"> </p>
+       <div class="container1">
+           <div class="container2">
+           </div>
+       </div>
+
+       <p align="center" >Все права защищены, а блюда приготовлены с душой! </p>
+   </BODY>
+</HTML>

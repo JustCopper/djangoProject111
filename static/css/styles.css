@@ -1,0 +1,44 @@
+
+body {
+   background-color: rgba(255, 140, 0);
+
+}
+h1, h2 {
+   color: rgba(255, 255, 255);
+}
+p, p1 {
+   color: rgb(255, 255, 255);
+}
+a, li {
+   color: rgba(255, 255, 255);
+   font-style: italic;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.container1, .form1 {
+   background-color: #FFCCCC;
+   padding: 10px;
+}
+.form2 {
+   background-color: #FFA07A;
+   width: 300px;
+   padding: 10px;
+   border-radius: 3%;
+   box-shadow: 5px 5px 5px rgba(255, 255, 255);
+}
+
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+   body {
+       font-size: 18px;
+   }
+   .form2 {
+       width: 100%;
+   }
+}
+

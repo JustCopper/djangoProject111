@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+      <TITLE>Салаты</TITLE>
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </HEAD>
+
+  <BODY onmousedown="return false" onselectstart="return false">
+      <CENTER>
+          <H2>Салаты</H2>
+      </CENTER>
+      <p1>Здесь вы можете выбрать любой понравившийся вам салат из списка.</p1>
+      <p1> </p1>
+      <CENTER>
+          <a href="{% url 'home' %}">Всеми любимый цезарь</a>
+      </CENTER>
+      <CENTER>
+          <img src="{% static 'images/цезарь.jpg' %}" width="250" height="200">
+      </CENTER>
+      <CENTER>
+          <a href="{% url 'home' %}">Салат с крабовыми палочками</a>
+      </CENTER>
+      <CENTER>
+          <img src="{% static 'images/крабовые.jpg' %}" width="250" height="200">
+      </CENTER>
+      <CENTER>
+          <a href="{% url 'home' %}">Салат Моя прекрасная леди</a>
+      </CENTER>
+      <CENTER>
+          <img src="{% static 'images/ледии.jpg' %}" width="250" height="200">
+      </CENTER>
+
+      <hr>
+      <a href="{% url 'home' %}">На главную страницу</a>
+  </BODY>
+</HTML>

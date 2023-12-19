@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<HTML>
+   <HEAD>
+       <TITLE>Супы</TITLE>
+       <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+   </HEAD>
+
+   <BODY onmousedown="return false" onselectstart="return false">
+       <CENTER>
+           <H2>Супы</H2>
+       </CENTER>
+       <p1>Здесь вы можете выбрать любой понравившийся суп из списка.</p1>
+       <p1> </p1>
+       <CENTER>
+           <a href="{% url 'home' %}">Борщ</a>
+       </CENTER>
+       <CENTER>
+           <img src="{% static 'images/борщ.jpg' %}" width="250" height="200">
+       </CENTER>
+       <CENTER>
+           <a href="{% url 'home' %}">Куриный суп</a>
+       </CENTER>
+       <CENTER>
+           <img src="{% static 'images/курсуп.jpg' %}" width="250" height="200">
+       </CENTER>
+       <CENTER>
+           <a href="{% url 'home' %}">Щи</a>
+       </CENTER>
+       <CENTER>
+           <img src="{% static 'images/щи.jpg' %}" width="250" height="200">
+       </CENTER>
+
+       <hr>
+       <a href="{% url 'home' %}">На главную страницу</a>
+   </BODY>
+</HTML>

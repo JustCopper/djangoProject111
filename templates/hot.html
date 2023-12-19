@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+      <TITLE>Горячее</TITLE>
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </HEAD>
+
+  <BODY onmousedown="return false" onselectstart="return false">
+      <CENTER>
+          <H2>Горячее</H2>
+      </CENTER>
+      <p1>Здесь вы можете выбрать любое понравившееся горячее блюдо из списка.</p1>
+      <p1> </p1>
+      <form action="{% url 'home' %}" method="post">
+ <input type="hidden" name="recipe_title" value="Фаршированный картофель, запечённый в духовке">
+ <input type="hidden" name="image_path" value="{% static 'images/картофель.jpg' %}">
+           {% csrf_token %}
+
+ <p>Фаршированный картофель, запечённый в духовке</p>
+ <img src="{% static 'images/картофель.jpg' %}" width="350" height="200">
+ <input type="submit" value="Перейти к рецепту">
+ </form>
+
+      <form action="{% url 'home' %}" method="post">
+ <input type="hidden" name="recipe_title" value="Ленивые голубцы в духовке">
+ <input type="hidden" name="image_path" value="{% static 'images/голубцы.jpg' %}">
+           {% csrf_token %}
+
+ <p>Ленивые голубцы в духовке</p>
+ <img src="{% static 'images/голубцы.jpg' %}" width="350" height="200">
+ <input type="submit" value="Перейти к рецепту">
+ </form>
+
+      <form action="{% url 'home' %}" method="post">
+ <input type="hidden" name="recipe_title" value="Куриный беф-строганов">
+ <input type="hidden" name="image_path" value="{% static 'images/беф.jpg' %}">
+           {% csrf_token %}
+
+ <p>Куриный беф-строганов</p>
+ <img src="{% static 'images/беф.jpg' %}" width="350" height="200">
+ <input type="submit" value="Перейти к рецепту">
+ </form>
+
+
+      <hr>
+      <a href="{% url 'home' %}">На главную страницу</a>
+  </BODY>
+</HTML>
